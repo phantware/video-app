@@ -1,7 +1,37 @@
 import React from 'react'
+// import rectangle from '../assets/images/Rectangle 5.svg'
 
+import styled from 'styled-components'
+
+const Container = styled.div`
+  position: relative;
+  /* text-align: center; */
+  /* color: white; */
+`
+const Image = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+`
+const Title = styled.h3`
+  position: absolute;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  margin: 109px 1000px 0px 77px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+`
 const Intro = () => {
-  return <div>Intro</div>
+  return (
+    <Container>
+      <Image src='assets/images/Rectangle 5.svg' alt='intro-image' />
+      <Title>Watch something incredible.</Title>
+    </Container>
+  )
 }
 
 export default Intro
