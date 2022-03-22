@@ -4,15 +4,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  position: relative;
-  /* text-align: center; */
-  /* color: white; */
+  margin-bottom: 98px;
 `
 const Image = styled.img`
   position: absolute;
   width: 100%;
   height: 550px;
   object-fit: cover;
+  margin-bottom: 98px;
 `
 const Title = styled.h3`
   position: absolute;
