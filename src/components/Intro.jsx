@@ -12,6 +12,10 @@ const Image = styled.img`
   height: 550px;
   object-fit: cover;
   margin-bottom: 98px;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+    height: 300px;
+  }
 `
 const Title = styled.h3`
   position: absolute;
@@ -23,6 +27,10 @@ const Title = styled.h3`
   line-height: 94px;
   letter-spacing: -0.05em;
   color: #ffffff;
+  @media only screen and (max-width: 480px) {
+    font-size: 40px;
+    line-height: 55px;
+  }
 `
 const Intro = () => {
   return (
