@@ -1,23 +1,17 @@
 import React from 'react'
 import Intro from '../components/Intro'
+import Movies from '../components/Movies'
 import Navbar from '../components/Navbar'
 import Search from '../components/Search'
-
-import styled from 'styled-components'
-
-const Container = styled.div`
-  position: absolute;
-  width: 100%;
-`
+import { movies } from '../data'
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      {/* <Container> */}
       <Intro />
       <Search />
-      {/* </Container> */}
+      <Movies movies={movies} />
     </>
   )
 }
