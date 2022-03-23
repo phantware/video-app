@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  width: 80%;
+  width: 95%;
   margin-top: 600px;
+  margin-left: 77px;
   padding-bottom: 100px;
 `
 const SearchPara = styled.p`
@@ -15,11 +16,11 @@ const SearchPara = styled.p`
   color: #000000;
 `
 const Input = styled.input`
-  width: 100%;
-  height: 50%;
+  width: 97%;
+  height: 0%;
   background: #ffffff;
   margin: 12px 0px;
-  padding: 30px;
+  padding: 10px;
   font-size: 20px;
 `
 
