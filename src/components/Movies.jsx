@@ -10,10 +10,6 @@ const Container = styled.div`
   overflow: hidden;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  /* @media only screen and (max-width: 480px) {
-    width: 100%;
-    height: 300px;
-  } */
 `
 const Movies = ({ movies }) => {
   return (

@@ -13,7 +13,6 @@ const Images = styled.img`
   width: 300px;
   height: 300px;
   object-fit: cover;
-  /* border-radius: 12px; */
 `
 const Nametitle = styled.h4`
   position: absolute;

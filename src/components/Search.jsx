@@ -7,7 +7,7 @@ const Container = styled.div`
   margin-left: 77px;
   padding-bottom: 100px;
   @media only screen and (max-width: 480px) {
-    margin-top: 330px;
+    margin-top: 230px;
     margin-left: 30px;
     padding-bottom: 20px;
   }

@@ -14,7 +14,7 @@ const Image = styled.img`
   object-fit: cover;
   margin-bottom: 98px;
   @media only screen and (max-width: 480px) {
-    width: 100%;
+    width: 100vw;
     height: 300px;
   }
 `
@@ -31,6 +31,8 @@ const Title = styled.h3`
   @media only screen and (max-width: 480px) {
     font-size: 40px;
     line-height: 55px;
+    text-align: center;
+    margin: 50px;
   }
 `
 const Intro = () => {
