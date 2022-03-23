@@ -6,6 +6,11 @@ const Container = styled.div`
   margin-top: 600px;
   margin-left: 77px;
   padding-bottom: 100px;
+  @media only screen and (max-width: 480px) {
+    margin-top: 330px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+  }
 `
 const SearchPara = styled.p`
   font-family: 'DM Sans';
@@ -14,14 +19,23 @@ const SearchPara = styled.p`
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+  @media only screen and (max-width: 480px) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 `
 const Input = styled.input`
   width: 97%;
-  height: 0%;
   background: #ffffff;
   margin: 12px 0px;
   padding: 10px;
   font-size: 20px;
+  @media only screen and (max-width: 480px) {
+    width: 90%;
+    margin: 10px 0px;
+    font-size: 10px;
+  }
 `
 
 const Search = () => {
