@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  /* position: relative; */
   width: 80%;
-  bottom: 50px;
   margin-top: 600px;
   padding-bottom: 100px;
 `
