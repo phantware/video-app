@@ -1,5 +1,6 @@
 export const movies = [
   {
+    id: 1,
     Title: 'Batman Beyond',
     Year: '2015–',
     imdbID: 'tt4178838',
@@ -8,6 +9,7 @@ export const movies = [
       'https://m.media-amazon.com/images/M/MV5BMjA2NTQ5NzkzM15BMl5BanBnXkFtZTgwNjc4NjY5NTE@._V1_SX300.jpg',
   },
   {
+    id: 2,
     Title: 'Batman Returns',
     Year: '1992',
     imdbID: 'tt0290455',

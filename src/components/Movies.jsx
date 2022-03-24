@@ -14,7 +14,7 @@ const Container = styled.div`
 const Movies = ({ movies }) => {
   return (
     <Container>
-      {movies.map((single) => (
+      {movies?.map((single) => (
         <Movie key={single.imdbID} single={single} />
       ))}
     </Container>

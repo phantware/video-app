@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { movies } from '../data'
 
 const Container = styled.div`
   width: 95%;
@@ -38,11 +39,16 @@ const Input = styled.input`
   }
 `
 
-const Search = () => {
+const Search = ({ setSearch }) => {
+  const searchMovie = (e) => {
+    const { value } = e.target
+    setSearch(value)
+  }
+
   return (
     <Container>
       <SearchPara>Search</SearchPara>
-      <Input type='text' />
+      <Input type='text' onChange={searchMovie} />
     </Container>
   )
 }

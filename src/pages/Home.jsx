@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Intro from '../components/Intro'
 import Movies from '../components/Movies'
 import Navbar from '../components/Navbar'
 import Search from '../components/Search'
-import { movies } from '../data'
+// import { movies } from '../data'
 import styled from 'styled-components'
+import axios from 'axios'
 
 const Container = styled.div`
   width: 100%;
@@ -16,12 +17,24 @@ const Container = styled.div`
   margin-bottom: 50px;
 `
 const Home = () => {
+  const [mofi, setMofi] = useState([])
+  const [search, setSearch] = useState('batman')
+  const fetchMovies = async () => {
+    const res = await axios.get(
+      `https://www.omdbapi.com/?s=${search}&page=10&apikey=678af5b2`
+    )
+    console.log('here is search', res.data.Search)
+    setMofi(res.data.Search)
+  }
+  useEffect(() => {
+    fetchMovies()
+  }, [search])
   return (
     <Container>
       <Navbar />
       <Intro />
-      <Search />
-      <Movies movies={movies} />
+      <Search setSearch={setSearch} />
+      <Movies movies={mofi} />
     </Container>
   )
 }
