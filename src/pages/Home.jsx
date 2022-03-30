@@ -23,17 +23,28 @@ const Home = () => {
     const res = await axios.get(
       `https://www.omdbapi.com/?s=${search}&page=10&apikey=678af5b2`
     )
-    console.log('here is search', res.data.Search)
     setMofi(res.data.Search)
   }
+
   useEffect(() => {
     fetchMovies()
   }, [search])
+
+  // if (search.length === 0) {
+  //   return (
+  //     // <h1>hello</h1>
+  //     <Container>
+  //       <Navbar />
+  //       <Intro />
+  //       <Search />
+  //     </Container>
+  //   )
+  // }
   return (
     <Container>
       <Navbar />
       <Intro />
-      <Search setSearch={setSearch} />
+      <Search fetchMovies={fetchMovies} setSearch={setSearch} />
       <Movies movies={mofi} />
     </Container>
   )

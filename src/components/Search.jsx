@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { movies } from '../data'
 
 const Container = styled.div`
   width: 95%;
