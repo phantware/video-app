@@ -41,7 +41,11 @@ const Input = styled.input`
 const Search = ({ setSearch }) => {
   const searchMovie = (e) => {
     const { value } = e.target
-    setSearch(value)
+    if (value === '') {
+      setSearch('batman')
+    } else {
+      setSearch(value)
+    }
   }
 
   return (

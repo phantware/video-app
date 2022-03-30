@@ -30,16 +30,6 @@ const Home = () => {
     fetchMovies()
   }, [search])
 
-  // if (search.length === 0) {
-  //   return (
-  //     // <h1>hello</h1>
-  //     <Container>
-  //       <Navbar />
-  //       <Intro />
-  //       <Search />
-  //     </Container>
-  //   )
-  // }
   return (
     <Container>
       <Navbar />
