@@ -29,7 +29,7 @@ const Nametitle = styled.h4`
 `
 
 const Movie = ({ single }) => {
-  const { Title, Year, imdbID, Type, Poster } = single
+  const { Title, Poster } = single
 
   return (
     <Container>

@@ -29,12 +29,11 @@ const Home = () => {
   useEffect(() => {
     fetchMovies()
   }, [search])
-
   return (
     <Container>
       <Navbar />
       <Intro />
-      <Search fetchMovies={fetchMovies} setSearch={setSearch} />
+      <Search search={search} fetchMovies={fetchMovies} setSearch={setSearch} />
       <Movies movies={mofi} />
     </Container>
   )
