@@ -33,7 +33,13 @@ const Movie = ({ single }) => {
 
   return (
     <Container>
-      <Images src={Poster} />
+      <Images
+        src={
+          Poster === ''
+            ? 'https://www.blog.motifphotos.com/wp-content/uploads/2020/02/video-1200x800.jpg'
+            : Poster
+        }
+      />
       <Nametitle>{Title}</Nametitle>
     </Container>
   )
